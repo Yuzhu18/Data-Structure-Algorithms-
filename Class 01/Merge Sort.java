@@ -1,6 +1,6 @@
 public class Solution {
  
- //	递归不是并行的，而是先运行到底（粉色）
+ // 递归不是并行的，而是先运行到底
  // 每次二分排序（merge sort），谁小移谁合并（merge），最后复制回原来的array
  
   public int[] mergeSort(int[] array) {
