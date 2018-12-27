@@ -1,4 +1,4 @@
-//similar to longest unrepeated characters
+//similar to 2.longest subtring without repeatted characters
 //time: loop once O(n)
 //space: map O(n)
 
