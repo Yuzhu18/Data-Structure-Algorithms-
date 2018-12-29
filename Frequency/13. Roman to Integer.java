@@ -11,16 +11,16 @@ class Solution {
         map.put('C', 100);
         map.put('D', 500);
         map.put('M', 1000);
-        
             
         int last = map.get(s.charAt(0));
         rst += last;
         for(int i = 1; i < s.length(); i++){
             int cur = map.get(s.charAt(i));
-            
+            // last character >= cur character , we should add together
             if(last >= cur){
                 rst += cur;
             }else{
+                // "IV" -> 4, we should minus
                 rst = rst  + cur - last -last; 
             }
             last = cur;
