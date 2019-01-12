@@ -15,16 +15,16 @@ public class Main {
         list.add(input);
     }
 
-    private static int twoSum(int target){
+    private static boolean twoSum(int target){
         Set<Integer> set = new HashSet<Integer>();
         for(int i = 0; i < list.size(); i++ ){
             int n = target - list.get(i);
-            if(!set.contains(n)){
-                set.add(n);
+            if(set.contains(n)){
+                return true;
             }else{
-                return i;
+                set.add(n);
             }
         }
-        
+        return false;
     }
 }
