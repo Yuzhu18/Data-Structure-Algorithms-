@@ -2,7 +2,7 @@ public class Solution {
 
   public int[] kClosest(int[] array, int target, int k) {
   
-    // 找k个与target相邻的数
+    /// 找k个与target相邻的数
     //想找到最近邻的数，然后谁小取谁，取k个
     //O(logn + k)
     
