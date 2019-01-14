@@ -2,7 +2,7 @@ class LRUCache {
     // find answer to a question :   hashmap
     // adjust the timestamp of a particular entry
     // find and delete the oldest entry
-    //insert an entry as the newest   : doubly linked list
+    ///insert an entry as the newest   : doubly linked list
     
     
     static class Node<K, V>{
