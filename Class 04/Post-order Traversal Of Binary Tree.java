@@ -1,6 +1,6 @@
 public class Solution {
 
-//1. iterative way:
+///1. iterative way:
   public List<Integer> postOrder(TreeNode root) {
     // 1.reverse pre-order with right before left
     if(root == null){
