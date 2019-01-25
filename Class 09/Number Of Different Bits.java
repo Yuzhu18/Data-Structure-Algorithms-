@@ -1,5 +1,5 @@
 public class Solution {
-  //
+  ///
   public int diffBits(int a, int b) {
     int bit = 0;
     
