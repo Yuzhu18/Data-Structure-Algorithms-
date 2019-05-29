@@ -33,7 +33,6 @@ class Solution {
                     if(tmp.left != null){
                         deque.offerFirst(tmp.left);
                     }
-            
                 }else{
                     // odd level from left -> right
                     TreeNode temp = deque.pollFirst();
