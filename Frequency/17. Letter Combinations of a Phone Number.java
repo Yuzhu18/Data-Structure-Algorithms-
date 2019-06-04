@@ -50,13 +50,12 @@ class Solution {
         
         return result;
     }
-    
+ 
     private void dfs(String digits, List<String> result, Map<Character, char[]> map, StringBuilder sb) {
         if (sb.length() == digits.length()) {
             result.add(new String(sb));
             return;
         }
-        
         for (char c : map.get(digits.charAt(sb.length()))) {
 map.get(digits.charAt(sb.length()))) {
             sb.append(c);
@@ -64,7 +63,5 @@ map.get(digits.charAt(sb.length()))) {
             sb.setLength(sb.length() - 1);
         }
     }
-
-
 }
 
