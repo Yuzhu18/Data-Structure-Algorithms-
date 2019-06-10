@@ -15,7 +15,6 @@ public class Solution {
 }
 
 
-
 // 2. bit way
 
 public class Solution {
