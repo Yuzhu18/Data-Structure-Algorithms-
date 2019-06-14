@@ -8,7 +8,6 @@
  *   }
  * }
  */
- 
 public class Solution {
   public boolean isBipartite(List<GraphNode> graph) {
     Map<GraphNode, Integer> hashmap = new HashMap<>();
