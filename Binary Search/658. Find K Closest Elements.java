@@ -1,4 +1,5 @@
 public class Solution {
+  
   // time： O（logn + k）
   public int[] kClosest(int[] array, int target, int k) {
     if (array == null || array.length < k) {
