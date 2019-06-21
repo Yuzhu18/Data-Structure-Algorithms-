@@ -1,5 +1,4 @@
 public class Solution {
-    
     // selection sort, 谁小移谁
     // time: O(n^2)  1 + 2 + 3 + 4 + ..... + n  等差数列求和 = n(n + 1)/2
     // space: O(1) 
