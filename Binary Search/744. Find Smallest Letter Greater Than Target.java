@@ -1,4 +1,5 @@
 class Solution {
+    
     // Binary Search : give sorted array
     // Same as ’Smallest Element that is larger than target‘
     // when all elements smaller than target, return the first element
