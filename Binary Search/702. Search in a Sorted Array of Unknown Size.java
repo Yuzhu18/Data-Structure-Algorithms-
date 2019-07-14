@@ -1,5 +1,4 @@
 class Solution {
-    
     //O(logn)
     public int search(ArrayReader reader, int target) {
         int right = 1;
