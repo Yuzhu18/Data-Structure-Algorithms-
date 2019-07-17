@@ -1,5 +1,6 @@
 public class Solution {
 
+  
   private Deque<Integer> stack1;
   private Deque<Integer> stack2;
   
