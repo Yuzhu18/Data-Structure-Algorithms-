@@ -1,0 +1,24 @@
+class Solution {
+    // method 1: 通过把每个string变成char array, sort之后判断是否是anagrams
+    // O (nlnl)
+    public List<List<String>> groupAnagrams(String[] strs) {
+       
+        if (strs == null || strs.length == 0) {
+            return null;
+        }
+        Map<String,List<String>> map = new HashMap<>();
+        for (int i = 0; i < strs.length; i++) {
+            char[] tmp = strs[i].toCharArray();
+            Arrays.sort(tmp);
+            String keyStr = new String(tmp);
+            if (!map.containsKey(keyStr)) {
+                map.put(keyStr, new ArrayList<String>());
+            } 
+            map.get(keyStr).add(strs[i]);
+        }
+        return new ArrayList<List<String>>(map.values());
+    }
+}
+//还有一种方式判断anagram：
+//可以用bucket sort,26 size 的array, 牺牲空间，节省时间
+// O (n*l)
