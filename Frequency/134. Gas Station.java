@@ -1,5 +1,4 @@
 class Solution {
-    
     // one pass, 如果发现走到第i 个点gas < 0, 说明之前的点都不符合
     // 从下一个点继续走，直到找到结果
     // time: O(n)
