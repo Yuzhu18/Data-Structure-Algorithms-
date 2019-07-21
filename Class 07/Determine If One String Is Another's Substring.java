@@ -1,5 +1,6 @@
 public class Solution {
   public int strstr(String large, String small) {
+    
     // 相当于两个For loop
     if(small.length() > large.length()){
       return -1;
