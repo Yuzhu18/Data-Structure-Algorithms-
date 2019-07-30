@@ -7,7 +7,6 @@
  *     Interval(int s, int e) { start = s; end = e; }
  * }
  */
-
 class Solution {
     //利用min-heap
     // 1. sort start time
