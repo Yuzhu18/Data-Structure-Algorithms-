@@ -3,6 +3,7 @@ class Solution {
     // Same as ’Smallest Element that is larger than target‘
     // when all elements smaller than target, return the first element
     // O (logn)
+    
     public char nextGreatestLetter(char[] letters, char target) {
         int left = 0;
         int right = letters.length - 1;
