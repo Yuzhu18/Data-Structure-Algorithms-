@@ -2,7 +2,6 @@ public class Solution {
   public List<Integer> common(List<Integer> A, List<Integer> B) {
   
     // two poniters
-    
     List<Integer> rst = new ArrayList<>();
     int pointA = 0;
     int pointB = 0;
