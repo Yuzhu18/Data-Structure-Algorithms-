@@ -3,7 +3,6 @@
 *    public Integer get(int index);
 *  }
 */
-
 // You do not need to implement the Dictionary interface.
 // You can use it directly, the implementation is provided when testing your solution.
 public class Solution {
