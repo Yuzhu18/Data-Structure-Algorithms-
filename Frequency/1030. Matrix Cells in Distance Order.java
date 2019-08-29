@@ -1,5 +1,6 @@
 class Solution {
     //BFS time: O(R*C)
+    // vistied array: space: O(R * C)
     public int[][] allCellsDistOrder(int R, int C, int r0, int c0) {
         Queue<int[]> queue = new LinkedList<>();
         queue.offer(new int[]{r0, c0});
