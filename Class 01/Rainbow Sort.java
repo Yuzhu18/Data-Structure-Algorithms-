@@ -1,5 +1,4 @@
 public class Solution {
-
   public int[] rainbowSort(int[] array) {
   
     if(array == null || array.length == 0){
