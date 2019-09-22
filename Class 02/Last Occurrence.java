@@ -1,7 +1,6 @@
 public class Solution {
 
   public int lastOccur(int[] array, int target) {
-  
     // 找last occur，while用相邻跳出
     // array[mid] == target 是继续向后找
     
