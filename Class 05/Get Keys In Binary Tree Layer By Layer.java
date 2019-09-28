@@ -8,7 +8,6 @@
  *   }
  * }
  */
- 
 public class Solution {
   public List<List<Integer>> layerByLayer(TreeNode root) {
     // 注意要提前放好size
