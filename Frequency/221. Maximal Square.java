@@ -1,24 +1,27 @@
 class Solution {
-    public int maximalSquare(char[][] matrix) {
-        //DP : 存以[i,j] 为右下角的square的最大边长
-        // time: O (mn)
-        // space: O (mn)
-        int rows = matrix.length;
-        if (rows == 0) {
-            return 0;
+  // 二维dp
+  // dp[i][j] represents largest square size when matrix[i][j] as bottom-right point
+  // dp[i][j] = Math.min{ dp[i - 1][j - 1], dp[i - 1][j], dp[i][j - 1] }; 
+  // Time: O(n * m)
+  // Space: O(n * m)
+  public int maximalSquare(char[][] matrix) {
+    // corner case
+      if (matrix == null || matrix.length == 0) {
+          return 0;
+      }
+    int[][] dp = new int[matrix.length][matrix[0].length];
+    int maxSize = 0;
+    for (int i = 0; i < matrix.length; i++) {
+      for (int j = 0; j < matrix[0].length; j++) {
+        // initial values
+        if (i == 0 || j == 0) {
+          dp[i][j] = matrix[i][j] == '1' ? 1 : 0;
+        } else if (matrix[i][j] == '1') {
+          dp[i][j] = Math.min(dp[i - 1][j - 1], Math.min(dp[i - 1][j], dp[i][j - 1]))  + 1;
         }
-        int cols = matrix[0].length;
-        int[][] dp = new int[rows + 1][cols + 1];
-        int maxLen = 0;
-        for (int i = 1; i <= rows;i++) {
-            for (int j = 1; j <= cols;j++) {
-                if (matrix[i - 1][j - 1] == '1') {
-                    dp[i][j] = Math.min(Math.min(dp[i][j - 1], dp[i - 1][j]), dp[i - 1][j - 1]) + 1;
-                    maxLen = Math.max(maxLen, dp[i][j]);
-                    
-                }
-            }
-        }
-        return maxLen * maxLen;
+        maxSize = Math.max(maxSize, dp[i][j]);
+      }
     }
+    return maxSize * maxSize;
+  }
 }
