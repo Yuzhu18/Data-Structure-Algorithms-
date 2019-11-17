@@ -28,7 +28,9 @@ class Solution {
         if (root == null) {
             return;
         }
+        // in-order traverse left node firstly
         traverse(root.left, target, k, queue);
+        // in-order traverse handle the current root node
         if (queue.size() < k) {
             queue.offerLast(root.val);
         } else {
@@ -38,6 +40,7 @@ class Solution {
                 queue.offerLast(root.val);
             }
         }
+        // in-order traverse right node lastly
         traverse(root.right, target, k, queue);
     }
 }
